@@ -4,16 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>聂泽昭 – Chinese watercolor painting</title>
-<meta name="description" content="Chinese watercolor paintings by 聂泽昭 (Nie Zezhao): birds, flowers, animals and mountain landscapes, painted by hand. See the gallery and find where to meet us.">
+<meta name="description" content="Original Chinese watercolor paintings by 聂泽昭 (Nie Zezhao): birds, flowers, animals and landscapes, painted by hand. New paintings every week, shipped within the US.">
 <meta name="theme-color" content="#ecefe8">
 <meta property="og:type" content="website">
 <meta property="og:title" content="聂泽昭 – Chinese watercolor painting">
-<meta property="og:description" content="Chinese watercolor paintings by 聂泽昭 (Nie Zezhao): birds, flowers, animals and mountain landscapes, painted by hand. See the gallery and find where to meet us.">
+<meta property="og:description" content="Original Chinese watercolor paintings by 聂泽昭 (Nie Zezhao): birds, flowers, animals and landscapes, painted by hand. New paintings every week, shipped within the US.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&text=%E8%81%82%E6%B3%BD%E6%98%AD&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&text=%E8%81%82%E6%B3%BD%E6%98%AD%E5%B7%B2%E5%94%AE&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,8 +24,10 @@
     <a class="brand" href="index.html" lang="zh" aria-label="聂泽昭, home">聂泽昭</a>
     <nav class="nav" aria-label="Main">
       <a href="index.html" aria-current="page">Home</a>
+      <a href="shop.html">Shop</a>
       <a href="gallery.html">Gallery</a>
       <a href="events.html">Events</a>
+      <a href="about.html">About</a>
     </nav>
   </div>
 </header>
@@ -38,9 +41,9 @@
         </div>
         <div class="hero-copy">
           <p class="descriptor">Chinese watercolor painting</p>
-          <p class="lead">Birds, flowers, animals and mountain landscapes, painted by hand with brush, ink and color.</p>
+          <p class="lead">Birds, flowers, animals and mountain landscapes, painted by hand with brush, ink and color. Every painting is one of a kind.</p>
           <div class="actions">
-            <a class="btn btn-solid" href="gallery.html">See all paintings</a>
+            <a class="btn btn-solid" href="shop.html">Shop paintings</a>
             <a class="btn btn-line" href="events.html">Find us at events</a>
           </div>
         </div>
@@ -57,22 +60,13 @@
     </div>
   </section>
 
-  <section class="band" aria-labelledby="selected-h">
+  <section class="band" aria-labelledby="new-h">
     <div class="wrap">
       <div class="section-head">
-        <h2 id="selected-h">Selected paintings</h2>
-        <a href="gallery.html">Browse the full gallery</a>
+        <h2 id="new-h">In the shop now</h2>
+        <a href="shop.html">Visit the shop</a>
       </div>
-      <div class="masonry" data-cols="2,3,4">
-        <figure class="art"><a href="full-2362.jpg"><img src="thumb-2362.jpg" width="640" height="834" loading="lazy" decoding="async" alt="Two cranes in reeds before a golden moon"></a></figure>
-        <figure class="art"><a href="full-2331.jpg"><img src="thumb-2331.jpg" width="640" height="867" loading="lazy" decoding="async" alt="Rooster, hen and chicks among yellow blossoms"></a></figure>
-        <figure class="art"><a href="full-2338.jpg"><img src="thumb-2338.jpg" width="640" height="866" loading="lazy" decoding="async" alt="Steep green gorge with mist and a small boat"></a></figure>
-        <figure class="art"><a href="full-2330.jpg"><img src="thumb-2330.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Panda among bamboo"></a></figure>
-        <figure class="art"><a href="full-2342.jpg"><img src="thumb-2342.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Two red-crowned cranes standing among reeds"></a></figure>
-        <figure class="art"><a href="full-2349.jpg"><img src="thumb-2349.jpg" width="640" height="861" loading="lazy" decoding="async" alt="Two herons among lotus flowers"></a></figure>
-        <figure class="art"><a href="full-2335.jpg"><img src="thumb-2335.jpg" width="640" height="861" loading="lazy" decoding="async" alt="Golden gourds on a vine with a small blue bird"></a></figure>
-        <figure class="art"><a href="full-2354.jpg"><img src="thumb-2354.jpg" width="640" height="986" loading="lazy" decoding="async" alt="Bird on a rock beneath teal bamboo leaves"></a></figure>
-      </div>
+      <div class="product-grid" id="new-grid" data-lightbox></div>
     </div>
   </section>
 
@@ -90,6 +84,25 @@
       </div>
     </div>
   </section>
+
+  <section class="band" aria-labelledby="sel-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="sel-h">From the gallery</h2>
+        <a href="gallery.html">Browse the full gallery</a>
+      </div>
+      <div class="masonry" data-cols="2,3,4" data-lightbox>
+        <figure class="art"><a href="full-2362.jpg"><img src="thumb-2362.jpg" width="640" height="834" loading="lazy" decoding="async" alt="Two cranes in reeds before a golden moon"></a></figure>
+        <figure class="art"><a href="full-2331.jpg"><img src="thumb-2331.jpg" width="640" height="867" loading="lazy" decoding="async" alt="Rooster, hen and chicks among yellow blossoms"></a></figure>
+        <figure class="art"><a href="full-2338.jpg"><img src="thumb-2338.jpg" width="640" height="866" loading="lazy" decoding="async" alt="Steep green gorge with mist and a small boat"></a></figure>
+        <figure class="art"><a href="full-2330.jpg"><img src="thumb-2330.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Panda among bamboo"></a></figure>
+        <figure class="art"><a href="full-2342.jpg"><img src="thumb-2342.jpg" width="640" height="853" loading="lazy" decoding="async" alt="Two red-crowned cranes standing among reeds"></a></figure>
+        <figure class="art"><a href="full-2349.jpg"><img src="thumb-2349.jpg" width="640" height="861" loading="lazy" decoding="async" alt="Two herons among lotus flowers"></a></figure>
+        <figure class="art"><a href="full-2335.jpg"><img src="thumb-2335.jpg" width="640" height="861" loading="lazy" decoding="async" alt="Golden gourds on a vine with a small blue bird"></a></figure>
+        <figure class="art"><a href="full-2354.jpg"><img src="thumb-2354.jpg" width="640" height="986" loading="lazy" decoding="async" alt="Bird on a rock beneath teal bamboo leaves"></a></figure>
+      </div>
+    </div>
+  </section>
 </main>
 <footer class="site-footer">
   <div class="wrap footer-grid">
@@ -98,12 +111,16 @@
       <p><strong lang="zh">聂泽昭</strong>Chinese watercolor painting</p>
     </div>
     <nav class="footer-nav" aria-label="Footer">
-      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
       <a href="gallery.html">Gallery</a>
       <a href="events.html">Events</a>
+      <a href="about.html">About</a>
     </nav>
+    <p class="footer-note" data-site="charity" hidden></p>
   </div>
 </footer>
+<script src="site-config.js"></script>
+<script src="shop-data.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

@@ -10,10 +10,11 @@
 <meta property="og:title" content="Gallery – 聂泽昭">
 <meta property="og:description" content="Every Chinese watercolor painting by 聂泽昭 in one place. Tap any painting to see it larger.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&text=%E8%81%82%E6%B3%BD%E6%98%AD&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&text=%E8%81%82%E6%B3%BD%E6%98%AD%E5%B7%B2%E5%94%AE&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,18 +24,20 @@
     <a class="brand" href="index.html" lang="zh" aria-label="聂泽昭, home">聂泽昭</a>
     <nav class="nav" aria-label="Main">
       <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
       <a href="gallery.html" aria-current="page">Gallery</a>
       <a href="events.html">Events</a>
+      <a href="about.html">About</a>
     </nav>
   </div>
 </header>
 <main id="main">
   <div class="wrap page-head">
     <h1 class="page-title">Gallery</h1>
-    <p class="page-intro">Every painting in one place. Tap any painting to see it larger, then swipe or use the arrows to move through them.</p>
+    <p class="page-intro">Every painting in one place, including ones that have found a home. Tap any painting to see it larger, then swipe or use the arrows to move through them.</p>
   </div>
   <div class="wrap gallery-body">
-    <div class="masonry" data-cols="2,3,4">
+    <div class="masonry" data-cols="2,3,4" data-lightbox>
       <figure class="art"><a href="full-2362.jpg"><img src="thumb-2362.jpg" width="640" height="834" loading="lazy" decoding="async" alt="Two cranes in reeds before a golden moon"></a></figure>
       <figure class="art"><a href="full-2331.jpg"><img src="thumb-2331.jpg" width="640" height="867" loading="lazy" decoding="async" alt="Rooster, hen and chicks among yellow blossoms"></a></figure>
       <figure class="art"><a href="full-2338.jpg"><img src="thumb-2338.jpg" width="640" height="866" loading="lazy" decoding="async" alt="Steep green gorge with mist and a small boat"></a></figure>
@@ -78,12 +81,15 @@
       <p><strong lang="zh">聂泽昭</strong>Chinese watercolor painting</p>
     </div>
     <nav class="footer-nav" aria-label="Footer">
-      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
       <a href="gallery.html">Gallery</a>
       <a href="events.html">Events</a>
+      <a href="about.html">About</a>
     </nav>
+    <p class="footer-note" data-site="charity" hidden></p>
   </div>
 </footer>
+<script src="site-config.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
